@@ -1,0 +1,21 @@
+package com.personetics.test;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class NumericNodeImpl implements NodeInterface {
+    private final String value;
+
+    public NumericNodeImpl(String value) {
+        this.value = value;
+    }
+
+    @Override
+    public Set<String> getDependencies() {
+        Set<String> dependencies = new HashSet<>();
+        for (char ch : value.toCharArray()) {
+            dependencies.add(String.valueOf(ch));
+        }
+        return dependencies;
+    }
+}
