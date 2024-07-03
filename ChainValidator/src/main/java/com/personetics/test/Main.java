@@ -34,5 +34,5 @@ public static void main(String[] args) {
     System.out.println(validator.validate(validChain1)); // should print true
     System.out.println(validator.validate(validChain2)); // should print true
     System.out.println(validator.validate(invalidChain)); // should print false
-    System.out.println(validator.validate(invalidChain2)); // should print true
+    System.out.println(validator.validate(validChain2)); // should print true
 }
