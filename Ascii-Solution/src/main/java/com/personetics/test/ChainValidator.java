@@ -21,6 +21,7 @@ public class ChainValidator {
         }
 
         // Validate all dependencies are covered by single values
-        return multiDependencies.stream().allMatch(singleValues::contains);
+        // multiDependencies.stream().allMatch(singleValues::contains);
+        return singleValues.containsAll(multiDependencies);
     }
 }

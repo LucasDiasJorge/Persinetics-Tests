@@ -23,12 +23,8 @@ public class ChainValidator {
             }
         }
 
-        for (String dep : multiDependencies) { // O(N) -> N.unit.leght
-            if (!singleValues.contains(dep)) {
-                return false;
-            }
-        }
-
-        return true;
+        // Validate all dependencies are covered by single values
+        // multiDependencies.stream().allMatch(singleValues::contains);
+        return singleValues.containsAll(multiDependencies);
     }
 }
