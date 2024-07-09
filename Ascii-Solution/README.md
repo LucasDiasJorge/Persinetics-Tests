@@ -14,7 +14,7 @@ Using integers (ASCII values) is more memory-efficient compared to strings, espe
 
 ## Example Memory Comparison
 
-1 - Single Character: Using int: 4 bytes.Using String: At least 40 bytes. This includes the character array, the String object overhead, and other metadata.
+1 - Using int: 4 bytes.Using String: At least 40 bytes. This includes the character array, the String object overhead, and other metadata.
 
 2 - Multiple Characters (e.g., "abc"): Using int: 3 characters * 4 bytes each = 12 bytes.
 Using String: 2 bytes per character * 3 characters + overhead = approximately 46 bytes or more.
